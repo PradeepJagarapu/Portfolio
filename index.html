@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>pradeepjagarapu-portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    .portfolio .portfolio-content .portfolio-info {
+      opacity: 0;
+      position: absolute;
+      inset: 0;
+      z-index: 3;
+      transition: all ease-in-out 0.3s;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 15px;
+    }
+    .portfolio .portfolio-content .portfolio-info h4 {
+      font-size: 14px;
+      padding: 5px 10px;
+      font-weight: 400;
+      color: #ffffff;
+      display: inline-block;
+      background-color: var(--accent-color);
+    }
+    .portfolio .portfolio-content .portfolio-info p {
+      position: absolute;
+      bottom: 10px;
+      text-align: center;
+      display: inline-block;
+      left: 0;
+      right: 0;
+      font-size: 16px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .portfolio .portfolio-content {
+      height: 400px;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+    .portfolio .portfolio-content img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    .portfolio .portfolio-content:hover .portfolio-info {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <div class="profile-img">
+      <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="" class="img-fluid rounded-circle">
+    </div>
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Pradeep Jagarapu</h1>
+    </a>
+    <div class="social-links text-center">
+      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/_a.s.h.b.o.r.n.e_?utm_source=qr&igsh=MW5jMWRwNWd4cncyeA==" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/PradeepJagarapu" class="github"> <i class="bi bi-github"></i></a>
+    </div>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#skills"><i class="bi bi-code-slash navicon"></i>Skills</a></li>
+        <li><a href="https://drive.google.com/file/d/1Trj8obBhaOZMU5YnHwGWiXFmUGClSOJw/view" download><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#projects"><i class="bi bi-images navicon"></i> Projects</a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+        <li class="dropdown"><a href=""><i class="bi bi-menu-button navicon"></i> <span>Certifications</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="#">Tech Mahindra</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <section id="hero" class="hero section dark-background">
+      <img src="https://images.unsplash.com/photo-1518655048521-f130df041f66?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" data-aos="fade-in">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Pradeep Jagarapu</h2>
+        <p>I'm a <span class="typed" data-typed-items="Java Developer,Java Backend Developer , Java Fullstack Developer"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+    </section>
+
+    <section id="about" class="about section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p> • As a Computer Science graduate, I bring expertise in full stack development and a passion for learning new technologies. With a strong foundation in Java and comprehensive project experience, I have developed solutions in areas such as quiz applications and predictive health models. My skills include Java,Spring Boot, HTML, CSS, JavaScript,Reactjs,SQL, MySQL, and machine learning. I aim to leverage my software development and data analysis skills to contribute effectively to dynamic organizations.</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Java Fullstack developer.</h2>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>04ᵀᴴ JAN 2002</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 9014544560</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Visakhapatnam, India</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Degree</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong><span>pradeepjagarapu4@gmail.com</span></li>
+                  <li onclick="window.location.href='https://drive.google.com/file/d/1Trj8obBhaOZMU5YnHwGWiXFmUGClSOJw/view'" style="cursor: pointer;"><i class="bi bi-chevron-right"></i> <strong>Resume:</strong> <span>Click to see Resume</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section id="skills" class="skills section light-background">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Skills</h2>
+        </div>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row skills-content skills-animation">
+            <div class="col-lg-6">
+              <div class="progress">
+                <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill"><span>CSS</span> <i class="val">60%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill"><span>JavaScript</span> <i class="val">50%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill"><span>Bootstrap</span> <i class="val">70%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="progress">
+                <span class="skill"><span>React JS</span> <i class="val">65%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill"><span>C</span> <i class="val">95%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill"><span>Java</span> <i class="val">80%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill"><span>SQL</span> <i class="val">80%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Tools</h2>
+        </div>
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-4 col-md-6 Tools-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon flex-shrink-0 me-3">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Eclipse-SVG.svg" alt="Eclipse IDE" width="50">
+              </div>
+              <div>
+                <h4 class="title mb-0"><a href="service-details.html" class="stretched-link">Eclipse IDE</a></h4>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 Tools-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon flex-shrink-0 me-3">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" alt="VS Code" width="50">
+              </div>
+              <div>
+                <h4 class="title mb-0"><a href="service-details.html" class="stretched-link">VS Code</a></h4>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 Tools-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon flex-shrink-0 me-3">
+                <img src="https://seeklogo.com/images/P/postman-logo-0087CA0D15-seeklogo.com.png" alt="Postman" width="50">
+              </div>
+              <div>
+                <h4 class="title mb-0"><a href="service-details.html" class="stretched-link">Postman</a></h4>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 Tools-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon flex-shrink-0 me-3">
+                <img src="https://seeklogo.com/images/S/spring-logo-9A2BC78AAF-seeklogo.com.png" alt="Spring Tool Suite" width="50">
+              </div>
+              <div>
+                <h4 class="title mb-0"><a href="service-details.html" class="stretched-link">Spring Tool Suite (STS)</a></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="portfolio section light-background">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Projects</h2>
+        </div>
+        <div class="container">
+          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+            <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Frontend</li>
+              <li data-filter=".filter-product">Java</li>
+            </ul>
+            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                <div class="portfolio-content">
+                  <img src="https://i.ytimg.com/vi/PBcqGxrr9g8/maxresdefault.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>1</h4>
+                    <p>Quiz Web Application</p>
+                    <a href="https://your-live-website-link-1.com" title="Live Preview" target="_blank" class="preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="https://github.com/your-github-repo-1" title="Github" target="_blank" class="details-link"><i class="bi bi-github"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                <div class="portfolio-content">
+                  <img src="https://s3-alpha.figma.com/hub/file/5824267305/72154ff6-22f1-4bb4-b6be-44d44586c1b4-cover.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>2</h4>
+                    <p>Recipe Sharing Application</p>
+                    <a href="https://your-live-website-link-2.com" title="Live Preview" target="_blank" class="preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="https://github.com/your-github-repo-2" title="Github" target="_blank" class="details-link"><i class="bi bi-github"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                <div class="portfolio-content">
+                  <img src="https://d2jx2rerrg6sh3.cloudfront.net/images/news/ImageForNews_794881_17307843182864580.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>3</h4>
+                    <p>Understanding Cardiac Health - Predictive Model</p>
+                    <a href="https://your-live-website-link-2.com" title="Live Preview" target="_blank" class="preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="https://github.com/your-github-repo-2" title="Github" target="_blank" class="details-link"><i class="bi bi-github"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                <div class="portfolio-content">
+                  <img src="https://i.ibb.co/396Bc9d4/Screenshot-2025-02-12-230255.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>4</h4>
+                    <p>Simple Webpage Template</p>
+                    <a href="https://pradeepjagarapu.github.io/webprojectbt/" title="Live Preview" target="_blank" class="preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="https://github.com/your-github-repo-4" title="Github" target="_blank" class="details-link"><i class="bi bi-github"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="services section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Services</h2>
+          <Strong>Hire me for...</Strong>
+        </div>
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon flex-shrink-0"><i class="bi bi-code-slash"></i></div>
+              <div>
+                <h4 class="title"><a href="service-details.html" class="stretched-link">Front-End Development</a></h4>
+                <p class="description">Crafting responsive and interactive user interfaces using HTML, CSS, JavaScript, and modern frameworks like React and Bootstrap to enhance user experience.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon flex-shrink-0"><i class="bi bi-server"></i></div>
+              <div>
+                <h4 class="title"><a href="service-details.html" class="stretched-link">Backend Java Development</a></h4>
+                <p class="description">Developing robust and scalable backend applications using Java, Spring Boot, and RESTful APIs to power dynamic web and mobile applications.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon flex-shrink-0"><i class="bi bi-database"></i></div>
+              <div>
+                <h4 class="title"><a href="service-details.html" class="stretched-link">SQL Database Management</a></h4>
+                <p class="description">Designing and managing relational databases with SQL, optimizing queries, and ensuring data integrity for high-performance applications.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Contact</h2>
+        </div>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+            <div class="col-lg-5">
+              <div class="info-wrap">
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                  <div>
+                    <h3>Address</h3>
+                    <p>Visakhapatnam,Andhra Pradesh,India </p>
+                  </div>
+                </div>
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-telephone flex-shrink-0"></i>
+                  <div>
+                    <h3>Phone</h3>
+                    <p>+91 9014544560</p>
+                  </div>
+                </div>
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bi bi-envelope flex-shrink-0"></i>
+                  <div>
+                    <h3>Email</h3>
+                    <p>pradeepjagarapu4@gmail.com</p>
+                  </div>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.436509393375!2d83.32179831488505!3d17.68681698789732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a394312f04b9f0f%3A0x5d953f492ed23d0b!2sVisakhapatnam%2C%20Andhra%20Pradesh%2C%20India!5e0!3m2!1sen!2sin!4v1676961268712!5m2!1sen!2sin" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                <div class="row gy-4">
+                  <div class="col-md-6">
+                    <label for="name-field" class="pb-2">Your Name</label>
+                    <input type="text" name="name" id="name-field" class="form-control" required="">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email-field" class="pb-2">Your Email</label>
+                    <input type="email" class="form-control" name="email" id="email-field" required="">
+                  </div>
+                  <div class="col-md-12">
+                    <label for="subject-field" class="pb-2">Subject</label>
+                    <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                  </div>
+                  <div class="col-md-12">
+                    <label for="message-field" class="pb-2">Message</label>
+                    <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                  </div>
+                  <div class="col-md-12 text-center">
+                    <button type="submit">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+  </main>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
